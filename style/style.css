@@ -1,0 +1,193 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000325}}
+body {
+  background-color: #e4e4e4;
+  background: url("../images/selfie.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000329}}
+.content {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  display: box;
+  box-orient: horizontal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000332}}
+  .content .left {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000336}}
+  .content .center {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    max-width: 50em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000341}}
+  .content .right {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000347}}
+header {
+  float: left;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000352}}
+nav {
+  margin-left: 15px;
+  width: 100%;
+  /*background-color: $navbar-color;*/
+  border-bottom: 5px solid #4b4b4b;
+  float: left;
+  margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000362}}
+  nav a {
+    float: left;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20pt;
+    color: #4b4b4b; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000372}}
+    nav a:hover {
+      color: #6d98a8; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000376}}
+.socialnav {
+  height: 2.07vw;
+  float: right;
+  width: 10vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000383}}
+  .socialnav a {
+    margin-left: 0;
+    line-height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000386}}
+    .socialnav a:hover {
+      background-color: #6d98a8; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000391}}
+.social {
+  width:15%;
+  border-radius: 60px;
+  background-color: #4b4b4b; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\0000395}}
+  .social:hover {
+    background-color: #6d98a8;
+    cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003101}}
+#mephoto {
+  width: 13vw;
+  height: 13vw;
+  border-radius: 13vw;
+  border: solid #4b4b4b 1vw;
+  float: left;
+  background-color: #FF0000;
+  background: url(../images/me.png) no-repeat;
+  background-size: 13vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003115}}
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 40pt; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003121}}
+h2 {
+  font-weight: normal;
+  font-size: 24pt; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003126}}
+article {
+  margin-top: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003130}}
+section {
+  margin-top: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003138}}
+.marked:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  margin-top: 0.8ex;
+  width: 130%;
+  height: 1.65ex;
+  background: #fff200; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003148}}
+.marked {
+  font-weight: italic;
+  float: left;
+  position: relative;
+  color: #000000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003153}}
+  .marked::selection {
+    color: black;
+    background: #fff200; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003160}}
+#card {
+  position: absolute;
+  margin-left: -221px;
+  margin-top: -90px;
+  left: 50%;
+  top: 50%;
+  font-size: 40pt;
+  width: 447px;
+  float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003170}}
+  #card cite {
+    margin-top: -20px;
+    float: right;
+    font-size: 20pt; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/admin\/Documents\/Portfolio\/Web\/style\/style\.scss}line{font-family:\00003178}}
+.sociallinks {
+  height:50px;
+  float: right;
+  display:none;}
+
+/*
+@media screen and (max-width:600px) {
+   #mephoto{
+    margin-left: 150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border:solid #ffffff 10px;
+    background-color: #FF0000;
+    background: url(../images/me-small.png) no-repeat;
+    }
+
+    nav{
+    width:400px;
+    margin-top:90px;
+    height:30px;
+    background-color: #4b4b4b;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    }
+
+    nav a{
+        line-height: 64px;
+        margin-left:0;
+        width:400px;
+        text-align:center;
+    }
+
+    .socialnav {
+        margin-top:0;
+        width:311px;
+        float:left;
+        background-color:#4b4b4b;
+        padding-left:89px;
+    }
+
+    .socialnav a{
+        width:64px;
+        margin-left:10px;
+    }
+}*/

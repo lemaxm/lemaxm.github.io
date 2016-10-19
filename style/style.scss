@@ -1,0 +1,222 @@
+$navbar-color : #4b4b4b;
+$background-color: #e4e4e4;
+$mark-color: #fff200;
+$selection-color: #ffeb00;
+$highlight-color: #6d98a8;
+//#DD4DFF;
+
+@mixin flexbox-setup{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+
+    display: box;
+    box-orient: horizontal;
+}
+
+@mixin box-setup($pos){
+    -webkit-box-flex: $pos;
+    -moz-box-flex: $pos;
+    box-flex: $pos;
+}
+
+body{
+    background-color: $background-color;
+}
+
+.content{
+    @include flexbox-setup;
+
+    .left{
+        @include box-setup(1);
+    }
+
+    .center{
+        @include box-setup(1);
+        max-width:50em;
+    }
+
+    .right{
+        @include box-setup(1);
+    }
+}
+
+
+header{
+    float:left;
+    width:100%;
+}
+
+nav{
+    margin-left: 15px;
+
+    width:100%;
+
+    /*background-color: $navbar-color;*/
+    border-bottom: 5px solid $navbar-color;
+    float:left;
+    margin-bottom: 10px;
+
+    a{
+        float:left;
+        margin-right: 10px;
+
+        text-decoration: none;
+
+        font-size: 20pt;
+        color: $navbar-color;
+
+
+        &:hover{color: $highlight-color;}
+    }
+}
+
+.socialnav{
+    //margin-top:8px;
+    //margin-right:8px;
+    height:5.07vw;
+    float:right;
+    width: 20vw;
+
+    a {
+        margin-left:0;
+        line-height:0;
+        &:hover{ background-color:$highlight-color;}
+
+            }
+}
+
+.social{
+    border-radius: 60px;
+    background-color: $navbar-color;
+
+    &:hover{
+        background-color: $highlight-color;
+        cursor: pointer;
+    }
+}
+
+#mephoto{
+    width: 13vw;
+    height: 13vw;
+
+    border-radius: 13vw;
+    border:solid $navbar-color 1vw;
+    float:left;
+    background-color: #FF0000;
+    background: url(../images/me.png) no-repeat;
+    background-size: 13vw;
+
+}
+
+
+h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 40pt;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 24pt;
+}
+
+article{
+    margin-top: 20px;
+}
+
+section{
+    margin-top: 20px;
+
+}
+
+#picapica{
+    }
+
+.marked:before{
+    content:"";
+    position:absolute;
+    z-index: -1;
+    margin-top: 1.15ex;
+    width:100%;
+    height:1.1ex;
+    background: $mark-color;
+}
+
+.marked{
+    font-weight: italic;
+    float:left;
+    position:relative;
+    &::selection
+    {
+        color: black;
+        background: $mark-color;
+    }
+}
+
+
+#card{
+    position: absolute;
+    margin-left: -221px;
+    margin-top: -90px;
+    left: 50%;
+    top: 50%;
+    font-size: 40pt;
+    width:447px;
+    float:left;
+
+    cite{
+        margin-top: -20px;
+        float:right;
+        font-size: 20pt;
+    }
+}
+
+
+.sociallinks{
+    float:right;
+}
+
+/*
+@media screen and (max-width:600px) {
+   #mephoto{
+    margin-left: 150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border:solid #ffffff 10px;
+    background-color: #FF0000;
+    background: url(../images/me-small.png) no-repeat;
+    }
+
+    nav{
+    width:400px;
+    margin-top:90px;
+    height:30px;
+    background-color: #4b4b4b;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    }
+
+    nav a{
+        line-height: 64px;
+        margin-left:0;
+        width:400px;
+        text-align:center;
+    }
+
+    .socialnav {
+        margin-top:0;
+        width:311px;
+        float:left;
+        background-color:#4b4b4b;
+        padding-left:89px;
+    }
+
+    .socialnav a{
+        width:64px;
+        margin-left:10px;
+    }
+}*/
